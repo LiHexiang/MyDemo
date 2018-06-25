@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.lihexiang.mydemo.ClockActivity">
+
+    <com.example.lihexiang.mydemo.clockview.TimeClock
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="12:00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.example.lihexiang.mydemo.clockview.TimeClockView
+        android:id="@+id/clockView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

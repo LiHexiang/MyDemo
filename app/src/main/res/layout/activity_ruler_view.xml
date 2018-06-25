@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lihexiang.mydemo.RulerViewActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp"
+        android:background="#ECF4F4"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="身高\n（cm）"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSelectHeight"
+                android:layout_width="44dp"
+                android:layout_height="23dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:background="#60C675"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.example.lihexiang.mydemo.ruler.RulerView
+                android:id="@+id/rulerHeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                app:alphaEnable="false"
+                app:lineColor="#BEBEBE"
+                app:lineMaxHeight="25dp"
+                app:lineMidHeight="25dp"
+                app:lineMinHeight="10dp"
+                app:lineSpaceWidth="4dp"
+                app:lineWidth="1dp"
+                app:maxValue="100"
+                app:minValue="10"
+                app:perValue="1"
+                app:selectorValue="45"
+                app:textColor="#666666" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#60C675" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp"
+        android:background="#ECF4F4"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="体重\n（kg）"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSelectWeight"
+                android:layout_width="44dp"
+                android:layout_height="23dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:background="#60C675"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.example.lihexiang.mydemo.ruler.RulerView
+                android:id="@+id/rulerWeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                app:alphaEnable="false"
+                app:lineColor="#BEBEBE"
+                app:lineMaxHeight="25dp"
+                app:lineMidHeight="25dp"
+                app:lineMinHeight="10dp"
+                app:lineSpaceWidth="4dp"
+                app:lineWidth="1dp"
+                app:maxValue="100"
+                app:minValue="10"
+                app:perValue="0.1"
+                app:selectorValue="45"
+                app:textColor="#666666" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#60C675" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="11dp"
+        android:background="#ECF4F4"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dp"
+            android:text="头围\n（cm）"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSelectHeadCir"
+                android:layout_width="44dp"
+                android:layout_height="23dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:background="#60C675"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <com.example.lihexiang.mydemo.ruler.RulerView
+                android:id="@+id/rulerHeadCir"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                app:alphaEnable="false"
+                app:lineColor="#BEBEBE"
+                app:lineMaxHeight="25dp"
+                app:lineMidHeight="25dp"
+                app:lineMinHeight="10dp"
+                app:lineSpaceWidth="4dp"
+                app:lineWidth="1dp"
+                app:maxValue="100"
+                app:minValue="10"
+                app:perValue="1"
+                app:selectorValue="45"
+                app:textColor="#666666" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#60C675" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
