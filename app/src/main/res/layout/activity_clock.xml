@@ -7,7 +7,7 @@
     android:background="#999999"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.example.lihexiang.mydemo.ClockActivity">
+    tools:context="com.example.lihexiang.mydemo.clockview.ClockActivity">
 
     <com.example.lihexiang.mydemo.clockview.TimeClock
         android:layout_width="200dp"

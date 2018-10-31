@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.lihexiang.mydemo.clockview.ClockActivity;
+import com.example.lihexiang.mydemo.ruler.RulerViewActivity;
+import com.example.lihexiang.mydemo.verticalviewpager.sample.VerticalViewPagerActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Context context;
@@ -66,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, RulerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.verticalViewPager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, VerticalViewPagerActivity.class);
                 startActivity(intent);
             }
         });

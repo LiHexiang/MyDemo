@@ -1,9 +1,10 @@
-package com.example.lihexiang.mydemo;
+package com.example.lihexiang.mydemo.clockview;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.lihexiang.mydemo.R;
 import com.example.lihexiang.mydemo.clockview.TimeClockView;
 
 public class ClockActivity extends Activity {
