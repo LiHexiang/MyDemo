@@ -10,11 +10,14 @@ import android.widget.Button;
 import com.example.lihexiang.mydemo.clockview.ClockActivity;
 import com.example.lihexiang.mydemo.ruler.RulerViewActivity;
 import com.example.lihexiang.mydemo.verticalviewpager.sample.VerticalViewPagerActivity;
+import com.tencent.bugly.Bugly;
+import com.tencent.bugly.beta.Beta;
 
 public class MainActivity extends AppCompatActivity {
 
     private Context context;
 
+    private Button update;
     private Button webTest;
     private Button flowLayout;
     private Button math;
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+        update = (Button) findViewById(R.id.bt_update);
         webTest = (Button) findViewById(R.id.webTest);
         flowLayout = (Button) findViewById(R.id.flowLayout);
         math = (Button) findViewById(R.id.math);
@@ -34,9 +38,26 @@ public class MainActivity extends AppCompatActivity {
         ruler = (Button) findViewById(R.id.ruler);
 
         initEvent();
+
+        initUpdate();
+    }
+
+    private void initUpdate() {
+        Beta.upgradeDialogLayoutId = R.layout.dialog_update_upgrade;
+        Beta.tipsDialogLayoutId = R.layout.dialog_update_tips;
+        //初始化bugly 不放在程序启动时 而是放在MainActivity处！
+        Bugly.init(this, "900043002", false);
     }
 
     private void initEvent() {
+
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Beta.checkUpgrade();
+            }
+        });
+
         webTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
