@@ -11,9 +11,12 @@ import org.android.agoo.xiaomi.MiPushRegistar;
 
 public class APP extends Application {
 
+    private static APP app;
+
     @Override
     public void onCreate() {
         super.onCreate();
+        app = this;
         //初始化推送
         UMConfigure.init(this, "5b8748c58f4a9d61e2000284",
                 "channel", UMConfigure.DEVICE_TYPE_PHONE, "9ac8f5c6b5663b89b3c1776fcc2cd47e");
@@ -39,5 +42,9 @@ public class APP extends Application {
 
 
 
+    }
+
+    public static APP getApp() {
+        return app;
     }
 }
