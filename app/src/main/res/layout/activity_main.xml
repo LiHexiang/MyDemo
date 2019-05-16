@@ -57,6 +57,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="竖向的ViewPager" />
+
+        <Button
+            android:id="@+id/viewDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义view练习" />
     </LinearLayout>
 
 </ScrollView>

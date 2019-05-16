@@ -2,7 +2,7 @@ package com.example.lihexiang.mydemo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lihexiang.mydemo.clockview.ClockActivity;
+import com.example.lihexiang.mydemo.customviewdemo.CustomViewActivity;
 import com.example.lihexiang.mydemo.ruler.RulerViewActivity;
 import com.example.lihexiang.mydemo.util.CommonUtil;
 import com.example.lihexiang.mydemo.verticalviewpager.sample.VerticalViewPagerActivity;
@@ -129,6 +130,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, VerticalViewPagerActivity.class);
+                startActivity(intent);
+            }
+        });
+      findViewById(R.id.viewDemo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, CustomViewActivity.class);
                 startActivity(intent);
             }
         });

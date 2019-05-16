@@ -1,11 +1,10 @@
 package com.example.lihexiang.mydemo.ruler;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.lihexiang.mydemo.R;
-import com.example.lihexiang.mydemo.ruler.RulerView;
 
 public class RulerViewActivity extends AppCompatActivity {
 

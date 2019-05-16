@@ -1,12 +1,11 @@
 package com.example.lihexiang.mydemo.verticalviewpager.sample;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.lihexiang.mydemo.R;
 import com.example.lihexiang.mydemo.verticalviewpager.VerticalViewPager;
-import com.example.lihexiang.mydemo.verticalviewpager.transforms.StackTransformer;
 import com.example.lihexiang.mydemo.verticalviewpager.transforms.ZoomOutTransformer;
 
 
