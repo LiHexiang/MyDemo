@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -40,6 +42,11 @@ android {
 
     }
 
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -66,4 +73,9 @@ dependencies {
 
     //小米Push通道
     implementation 'com.umeng.sdk:push-xiaomi:1.0.0'
+    implementation 'androidx.core:core-ktx:1.2.0-alpha02'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

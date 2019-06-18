@@ -395,7 +395,7 @@ public class CommonUtil {
 
     public static JSONArray getIMEI() {
         List<String> imeiList = new ArrayList<String>();
-        CTelephoneInfo telephoneInfo = CTelephoneInfo.getInstance(APP.getApp());
+        CTelephoneInfo telephoneInfo = CTelephoneInfo.getInstance(APP.Companion.getApp());
         telephoneInfo.setCTelephoneInfo();
         if (!TextUtils.isEmpty(telephoneInfo.getImeiSIM1())) {
             imeiList.add(telephoneInfo.getImeiSIM1());
